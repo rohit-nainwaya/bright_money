@@ -7,7 +7,6 @@ body, html{
     padding: 0;
 }
 
-
 .main_div{
     background: linear-gradient(90deg, #E3F1E7, #FEEFC7);
     height: 100vh;
@@ -33,6 +32,10 @@ nav{
     margin: 40px 12% 40px 12%;
     display: flex;
     flex-direction: column;
+}
+
+.ch_par{
+
 }
 
 .ch_box{
@@ -190,6 +193,25 @@ border: 1px solid #D5D7DB
     height: 100px;
     margin-left: calc(-50vw + 50%);
     background: #F4F5F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compnies{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 0 12% 0 12%;
+}
+
+.f_items{
+    margin: 0 30px;
+    text-align: center;
+    color: #959AA5;
+    font-size: large;
+    flex: 1;
 }
 
 .new_d{
@@ -210,6 +232,21 @@ border: 1px solid #D5D7DB
     align-items: center;
     justify-content: space-between;
     padding: 10%;
+}
+
+@media (max-width: 617px) {
+    .steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10%;
+    }
+
+    .rev{
+        flex-direction: column-reverse;
+        padding-left: 15%;
+    }
 }
 
 div section img{
@@ -310,10 +347,11 @@ background: #F4F5F8;
     border: 1px solid #17C95F;
 }
 
-.crush_deb+p{
+.crush_deb+footer p{
     margin: 100px 0 100px 0;
     text-align: justify;
     opacity: 0.7;
+    font-size: small;
 }
 
 .app_icon{
@@ -332,30 +370,73 @@ background: #F4F5F8;
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 997px) {
     .pay_off1 {
       font-size: 2em;
       margin: 4% 0; 
     }
-    .crush_deb{
-        background: linear-gradient(101.18deg, #E5F1E3 0.62%, #BAE8CB 69.56%);
-        height: 300px;
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        overflow: hidden;
-    }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 667px) {
     .pay_off1 {
       font-size: 1.5em;
       margin: 3% 0;
     }
-    nav div .text{
-        display: none;
+  }
+
+  @media (max-width: 499px) {
+    .pay_off1 {
+      font-size: 1.2em;
+      margin: 3% 0;
     }
   }
+
+  @media (max-width: 420px) {
+    .pay_off1 {
+      font-size: 1em;
+      margin: 3% 0;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .crush_deb {
+        height: 500px;
+        background: linear-gradient(101.18deg, #E5F1E3 0.62%, #BAE8CB 69.56%);
+        min-height: 50vh; /* Ensures flexibility for smaller devices */
+        width: 100%; /* Prevent potential horizontal scrollbars */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden; /* Keeps content within bounds */
+        padding: 10px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    }
+}
+
+
+@media (max-width: 606px) {
+    nav .text {
+        display: none !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .mobile {
+        height: 400px;
+        transform: rotate(9.10deg);
+        position: relative;
+        bottom: 100px;
+        left: 20px;
+    }
+    
+    .mobile-screen {
+        position: absolute;
+        bottom: 285px;
+        left: 132px;
+        height: 256px;
+        object-fit: cover;
+        z-index: 1;
+        border-radius: 15px;
+    }
+}
