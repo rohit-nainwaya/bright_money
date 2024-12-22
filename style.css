@@ -440,3 +440,7 @@ background: #F4F5F8;
         border-radius: 15px;
     }
 }
+
+.logo:hover{
+    transform: scale(25px);
+}
