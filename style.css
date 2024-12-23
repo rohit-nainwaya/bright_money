@@ -32,10 +32,7 @@ nav{
     margin: 40px 12% 40px 12%;
     display: flex;
     flex-direction: column;
-}
-
-.ch_par{
-
+    align-items: stretch;
 }
 
 .ch_box{
@@ -149,6 +146,13 @@ nav{
     flex-wrap: wrap;
 }
 
+@media (max-width: 501px){
+    .payments{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .payments div {
     display: flex;
     align-items: center;
@@ -190,13 +194,17 @@ border: 1px solid #D5D7DB
 
 .featured {
     width: 100vw;
-    height: 100px;
+    height: fit-content;
     margin-left: calc(-50vw + 50%);
     background: #F4F5F8;
     display: flex;
+    flex-wrap: wrap !important;
     align-items: center;
     justify-content: center;
+    padding: 30px 0 30px 0;
 }
+
+
 
 .compnies{
     display: flex;
@@ -204,6 +212,13 @@ border: 1px solid #D5D7DB
     justify-content: space-between;
     /* flex-wrap: wrap; */
     margin: 0 12% 0 12%;
+}
+
+@media (max-width: 880px){
+    .compnies{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .f_items{
@@ -234,18 +249,26 @@ border: 1px solid #D5D7DB
     padding: 10%;
 }
 
+.rev span{
+    padding-right: 15%;
+}
+
 @media (max-width: 617px) {
     .steps{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
         padding: 10%;
+        gap: 50px;
     }
 
     .rev{
-        flex-direction: column-reverse;
-        padding-left: 15%;
+        flex-direction: column;
+    }
+
+    .rev span{
+        padding: 10%;
     }
 }
 
@@ -393,7 +416,7 @@ background: #F4F5F8;
 
   @media (max-width: 420px) {
     .pay_off1 {
-      font-size: 1em;
+      font-size: 1.2em;
       margin: 3% 0;
     }
   }
@@ -438,6 +461,26 @@ background: #F4F5F8;
         object-fit: cover;
         z-index: 1;
         border-radius: 15px;
+    }
+}
+
+@media (max-width: 940px) {
+    .pay_off1{
+        margin: 30px;
+    }
+    .ch_box{
+        margin: 20px;
+    }
+    .pay_off2{
+        margin: 30px;
+    }
+}
+
+@media (max-width: 643px) {
+    .ch_box{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3px;
     }
 }
 
