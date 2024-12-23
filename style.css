@@ -484,3 +484,30 @@ background: #F4F5F8;
 .logo:hover{
     transform: scale(25px);
 }
+
+.get_started{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 36px 12px 36px;
+    margin: 50px 0 20px 0; gap: 20px;
+    border: none;
+    border-radius: 15px;
+    background: #0E1E14;
+    color: #FFFFFF;
+    height: 50px;
+    width: 300px;
+    align-self: center;
+    font-size: 17px;
+}
+
+.get_arrow{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: #0E1E14;
+}
